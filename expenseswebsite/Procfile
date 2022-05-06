@@ -1,0 +1,2 @@
+web: gunicorn expenseswebsite.wsgi
+web: waitress-serve --listen=*:8000 my app.wsgi:application
